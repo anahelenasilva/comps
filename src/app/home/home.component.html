@@ -1,0 +1,13 @@
+<h1> {{ title }} </h1>
+
+<button [disabled]="clicked" (click)="handleClick()">
+    Click me
+</button>
+
+<div *ngFor="let boat of boats | async">
+
+    <app-boat [boat]="boat"></app-boat>
+
+</div>
+
+<!-- {{23.61565623666 | number }} -->  <!-- pipe -->
